@@ -22,13 +22,13 @@ from BSPM import info, level, events, notes, obstacles
 path = ("C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomWIPLevels/Example Map/")
 ```
 
-### Making a new map
+### Making a new Map
 ```python
 #Define variable "mapInfo" as the Info for the Map
 mapInfo = info
 ```
 
-### Making a new difficulty
+### Making a new Level/Difficulty
 ```python
 #Define variable "normalStandard" as a level
 normalStandard = level
