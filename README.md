@@ -86,3 +86,43 @@ normalStandard.write(path)
 #Write the Info file at the pre-defined path
 mapInfo.write(path)
 ```
+
+## Adding Metadata
+Default Metadata is provided in the package but alot of elements should be changed to fit your map, this can be done easily with the following code.
+
+### Map Wide Metadata
+
+```python
+#Define the metadata of the Map
+mapInfo.version = "3.2.0"
+mapInfo.songName = "Faded"
+mapInfo.songSubName = "Where Are You Now"
+mapInfo.songAuthorName = "Alan Walker"
+mapInfo.levelAuthorName = "Jerry marshall"
+mapInfo.beatsPerMinute = 90
+mapInfo.shuffle = 0
+mapInfo.shufflePeriod = 0.5
+mapInfo.previewStartTime = 12
+mapInfo.previewDuration = 10
+mapInfo.songFilename = "song.ogg"
+mapInfo.coverImageFilename = "cover.jpg"
+mapInfo.environmentName = "DefaultEnvironment"
+mapInfo.songTimeOffset = 0
+mapInfo.contributors = ""
+```
+
+### Per Level/Difficulty Metadata
+```python
+#Define the metadata of normalStandard
+normalStandard.characteristicName = "Standard"
+normalStandard.difficulty = "Normal"
+normalStandard.difficultyRank = 3
+normalStandard.noteJumpMovementSpeed = 12
+normalStandard.noteJumpStartBeatOffset = 0
+normalStandard.editorOffset = 0
+normalStandard.editorOldOffset = 0
+normalStandard.warnings = "Don't Break Ur Arms lol"
+normalStandard.information = "Mapped With Beat Saber Python Mapper"
+normalStandard.suggestions = "Technicolor, Chroma"
+normalStandard.requirements = ""
+```
