@@ -19,7 +19,7 @@ from BSPM import info, level, events, notes, obstacles
 ### Set the desired path for your map folder
 
 ```python
-path = ("C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomWIPLevels/maptest/")
+path = ("C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomWIPLevels/Example Map/")
 ```
 
 ### Making a new map
