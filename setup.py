@@ -11,7 +11,7 @@ setuptools.setup(
     description="A package to create Beat Saber maps within python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/jerrymarshall2004/BeatSaberPythonMapper/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
