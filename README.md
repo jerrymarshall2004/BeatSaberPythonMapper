@@ -31,7 +31,7 @@ mapInfo = info
 ### Making a new Level/Difficulty
 ```python
 #Define variable "normalStandard" as a level
-normalStandard = level
+normalStandard = level.level()
 ```
 
 ### Adding Events

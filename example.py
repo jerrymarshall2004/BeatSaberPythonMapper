@@ -29,7 +29,7 @@ mapInfo.contributors = ""
 #LEVELS
 
 #Define variable "normalStandard" as a level
-normalStandard = level
+normalStandard = level.level()
 
 #Define the attributes of normalStandard (Not required, default values are provided)
 normalStandard.characteristicName = "Standard"

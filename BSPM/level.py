@@ -1,38 +1,6 @@
 from . import info
 from . import notes
 
-global characteristicName
-global difficulty
-global difficultyRank
-global beatmapFilename
-global noteJumpMovementSpeed
-global noteJumpStartBeatOffset
-global editorOffset
-global editorOldOffset
-global warnings
-global information
-global suggestions
-global requirements
-global events
-global notes
-global obstacles
-
-characteristicName = "Standard"
-difficulty = "Normal"
-difficultyRank = 3
-beatmapFilename = "NormalStandard"
-noteJumpMovementSpeed = 12
-noteJumpStartBeatOffset = 0
-editorOffset = 0
-editorOldOffset = 0
-warnings = ''
-information = ''
-suggestions = ''
-requirements = ''
-events = ''
-notes = ''
-obstacles = ''
-
 def listToText(events, notes, obstacles):
     global eventText
     global noteText
@@ -53,27 +21,24 @@ def writeFile(difficulty, characteristicName, path, events, notes, obstacles):
     difficultyFile = open(path + difficulty + characteristicName + '.dat', "w")
     difficultyFile.write (difficultyText)
 
-def write(path):
-    writeFile(difficulty, characteristicName, path, events, notes, obstacles)
-    info.defineBeatmapSets(characteristicName, difficulty, difficultyRank, beatmapFilename, noteJumpMovementSpeed, noteJumpStartBeatOffset, editorOffset, editorOldOffset, warnings, information, suggestions, requirements)
-
 class level:
     def __init__(self):
-        global characteristicName
-        global difficulty
-        global difficultyRank
-        global beatmapFilename
-        global noteJumpMovementSpeed
-        global noteJumpStartBeatOffset
-        global editorOffset
-        global editorOldOffset
-        global warnings
-        global information
-        global suggestions
-        global requirements
-        global events
-        global notes
-        global obstacles
+        
+        characteristicName = "Standard"
+        difficulty = "Normal"
+        difficultyRank = 3
+        beatmapFilename = "NormalStandard"
+        noteJumpMovementSpeed = 12
+        noteJumpStartBeatOffset = 0
+        editorOffset = 0
+        editorOldOffset = 0
+        warnings = ''
+        information = ''
+        suggestions = ''
+        requirements = ''
+        events = ''
+        notes = ''
+        obstacles = ''
         self.characteristicName = characteristicName
         self.difficulty = difficulty
         self.difficultyRank = difficultyRank
@@ -89,3 +54,7 @@ class level:
         self.events = events
         self.notes = notes
         self.obstacles = obstacles
+
+    def write(self, path):
+        writeFile(self.difficulty, self.characteristicName, path, self.events, self.notes, self.obstacles)
+        info.defineBeatmapSets(self.characteristicName, self.difficulty, self.difficultyRank, self.beatmapFilename, self.noteJumpMovementSpeed, self.noteJumpStartBeatOffset, self.editorOffset, self.editorOldOffset, self.warnings, self.information, self.suggestions, self.requirements)
